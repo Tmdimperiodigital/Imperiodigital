@@ -1,0 +1,457 @@
+@import url('bootstrap.css');
+@import url('mask-tell.css');
+@import url('politicas.css');
+@import url('garantia.css');
+@import url('novidade.css');
+
+/* FORMULÁRIO */
+.form-modal {
+    max-width: 452px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .form-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .form-modal .aviso {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--subtitulo);
+  }
+  
+  .form-modal p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+  
+    margin-bottom: 0px;
+  }
+  
+  .form-input-nm {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #354657;
+    border-radius: 219px;
+    padding: 20px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-primary);
+  }
+  
+  /* FORM AUTOCOMPLETE */
+  
+  .form-input-nm:-webkit-autofill {
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--text-primary);
+  }
+  
+  /* DROPDOWN TELEFONE */
+  
+  .iti-mobile .iti__country-list {
+    width: 90%;
+  }
+  
+  .iti-mobile .iti__country-name, .iti-mobile .iti__dial-code {
+    color: var(--principal);
+  }
+  
+  .iti__country-name {
+    font-size: 14px;
+  }
+  
+  .iti__dial-code {
+    font-size: 14px;
+  }
+  
+  #testeForm {
+    padding-left: 70px;
+  }
+  
+  .form-input-nm::-moz-placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .form-input-nm:-ms-input-placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .form-input-nm::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  input:focus-visible {
+    filter: brightness(1.5);
+    /* border: 1px solid #333; */
+    outline: 1px solid rgba(78, 158, 242, 0.1098039216);
+  }
+
+
+/* botão de pdf */
+
+.recuse {
+    background: transparent;
+    border: #404245;
+    color: #f7f7f7;
+    font-size: 13px;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    width: 75%;
+}
+
+.btn {
+    font-size: 13px;
+}
+
+.btn {
+    text-transform: uppercase;
+    text-color: #f7f7f7;
+    background-color: transparent;
+    padding: 15px 5px;
+    border-radius: 100px;
+    box-shadow: ;
+    transition: 0.4s;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Exo 2", Arial, Helvetica, sans-serif;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+.ticto-refuse-button {
+    border: 1px solid #f7f7f7 !important;
+    max-width:  85%;
+}
+
+
+.aviso::before {
+    margin-top: -30px;
+    margin-left: -24px;
+    margin-bottom: -20px;
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px; 
+    padding: 1px 1px 1px 1px; 
+    background:linear-gradient(to right, #47464d,rgba(255, 255, 255, 0)); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            
+  }
+
+
+  .btn-submit {
+    background: linear-gradient(94.17deg, #00C1EB 0%, #0094FF 100%), #D9D9D9;
+    border-radius: 68px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    font-family: 'IBM Plex Sans';
+    padding: 16px 31px;
+    margin-top: 20px;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 1px 21px rgba(0, 201, 255, 0.47));
+    transition: 0.5s;
+  }
+ 
+.btn-nm-primary {
+    color: black;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 15px;
+    line-height: 20px;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(94.17deg, #DB7D23 0%, #DB7D23 100%), #DB7D23;
+    border-radius: 168px;
+
+    padding: 18px 50px;
+
+    margin: 0 auto;
+
+    filter: drop-shadow(0px 1px 21px rgba(161, 78, 25, 1));
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.btn-nm-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 168px; 
+  padding: 0px; 
+  background:linear-gradient(to right,rgba(255, 255, 255, 1),rgba(255, 255, 255, 0)); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          pointer-events: none;
+}
+
+.btn-nm-primary:hover {
+    transform: scale(1.05);
+    transition: 0.5s; 
+    color: #fff;
+}
+
+.btn-nm-primary a:hover {
+    color: #fff;
+}
+
+
+  /* dois botões */
+
+
+.btn-nm-primary2 {
+    top: 2460px;
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 15px;
+    line-height: 20px;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(94.17deg, #DB7D23 0%, #DB7D23 100%), #DB7D23;
+    border-radius: 168px;
+
+    padding: 18px 50px;
+
+    margin: 0 auto;
+
+    filter: drop-shadow(0px 1px 21px rgba(161, 78, 25, 1));
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.btn-nm-primary2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 168px; 
+  padding: 0px; 
+  background:linear-gradient(to right,rgba(255, 255, 255, 1),rgba(255, 255, 255, 0)); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          pointer-events: none;
+}
+
+.btn-nm-primary2:hover {
+    transform: scale(1.05);
+    transition: 0.5s; 
+    color: #fff;
+}
+
+.btn-nm-primary2 a:hover {
+    color: #fff;
+}
+
+/* pitch */
+
+.btn-nm-primary3 {
+    top: 945px;
+    color: #DB7D23;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 15px;
+    line-height: 20px;
+    text-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+    background: transparent;
+    border-radius: 168px;
+    border: 1px solid #DB7D23 !important;
+
+    padding: 22px 62px;
+
+    margin: 0 auto;
+
+    filter: drop-shadow(0px 1px 21px rgba(161, 78, 25, 1));
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+}
+
+.btn-nm-primary3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 168px; 
+  padding: 0px; 
+  background:linear-gradient(to right,rgba(255, 255, 255, 1),rgba(255, 255, 255, 0)); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          pointer-events: none;
+}
+
+.btn-nm-primary3:hover {
+    transform: scale(1.05);
+    transition: 0.5s; 
+    color: #A14E19;
+    border: 1px solid #A14E19 !important;
+}
+
+.btn-nm-primary3 a:hover {
+    color: #A14E19;
+}
+
+
+  
+  /* FIM FORMULÁRIO */
+
+  /* VALIDACAO DE FORMULÁRIO */
+.has-danger .form-input-nm {
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 1px #FF4842;
+}
+
+.help-block .with-errors {
+  width: 100%;
+}
+
+.list-unstyled {
+  font-size: 0.875em;
+  color: #FF4842;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 3px;
+  position: relative;
+  margin-bottom: 0px;
+  margin-left: 24px;
+}
+
+.list-unstyled li {
+  margin-bottom: -15px;
+  color: #FF4842;
+}
+
+
+.modal .button span {
+    color: #000;
+    text-align: center;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .button:hover span {
+    color: #fff;
+    transition: .5s;
+    text-align: center;
+
+}
+
+#garantia {
+  padding-top: 164px;
+  padding-bottom: 164px;
+  background: #020408;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(79, 172, 191, 0.1) 0%, rgba(0, 0, 0, 0) 77%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(50% 50% at 50% 50%, rgba(232, 131, 148, 0.1) 0%, rgba(0, 0, 0, 0) 84%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(50% 50% at 50% 50%, rgba(33, 33, 33, 0.5) 0%, rgba(21, 21, 21, 0) 100%);
+}
+
+#garantia h2 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 55px;
+  color: #F7F7F7;
+  font-family: 'IBM Plex Sans';
+}
+
+#garantia h2::before {
+  content: attr(data-descricao);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+  background: linear-gradient(94.17deg, #00C1EB 0%, #0094FF 100%), #D9D9D9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#garantia h3 {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #B5B5B5;
+}
+
+#garantia img {
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 23:28:08 May 06, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:16:29 Jul 08, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 124.012
+  exclusion.robots: 0.093
+  exclusion.robots.policy: 0.083
+  cdx.remote: 0.1
+  esindex: 0.014
+  LoadShardBlock: 78.83 (3)
+  PetaboxLoader3.datanode: 89.001 (4)
+  load_resource: 52.234
+  PetaboxLoader3.resolve: 26.504
+*/

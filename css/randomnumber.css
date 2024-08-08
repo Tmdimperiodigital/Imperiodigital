@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+body {
+font-family: 'Exo 2', sans-serif;
+text-align: center;
+margin: 0;
+padding: 0;
+color: #000;
+}
+
+span {
+color: #333;
+}
+
+p {
+color: white;
+}
+
+#randomNumber {
+font-size: 17px;
+font-weight: ;
+color: #333;
+padding: 5px;
+}
